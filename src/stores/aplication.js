@@ -21,19 +21,37 @@ export const useAplicationStore = defineStore('aplicationStore', () => {
         ],
         difficulties: {
             easy: {
-                required: 5,
-                timeLimit: 90000,
-                params: { numberSounds: 3, size: 9, discover: 1 }
+                title: "Fácil",
+                description: "Você terá 1 minuto e 30 segundos para adivinhar o som que falta na sequência, clique na no som que você queira descobrir e responda até acertar todos os 5 padrões",
+                params: { 
+                    numberSounds: 3, 
+                    size: 9, 
+                    discover: 1, 
+                    timeLimit: 90000, 
+                    required: 5
+                }
             },
             medium: {
-                required: 5,
-                timeLimit: 90000,
-                params: { numberSounds: 4, size: 12, discover: 2 }
+                title: "Médio",
+                description: "Você terá 1 minuto e 30 segundos para adivinhar os 2 sons que faltam na sequência, clique na no som que você queira descobrir e responda até acertar todos os 5 padrões",
+                params: { 
+                    numberSounds: 4, 
+                    size: 12, 
+                    discover: 2, 
+                    timeLimit: 90000, 
+                    required: 5
+                }
             },
             hard: {
-                required: 3,
-                timeLimit: 90000,
-                params: { numberSounds: 5, size: 15, discover: 3 }
+                title: "Difícil",
+                description: "Você terá 1 minuto e 30 segundos para adivinhar os 3 sons que faltam na sequência, clique na no som que você queira descobrir e responda até acertar todos os 3 padrões",
+                params: {
+                    numberSounds: 5, 
+                    size: 15, 
+                    discover: 3, 
+                    timeLimit: 90000, 
+                    required: 3
+                }
             }
         }
       }
