@@ -14,7 +14,7 @@ export const useAplicationStore = defineStore('aplicationStore', () => {
             {id: 1, path: '/sounds/C4.mp3', name: 'Dó', color: 'blue'},
             {id: 2, path: '/sounds/D4.mp3', name: 'Ré', color: 'green'},
             {id: 3, path: '/sounds/E4.mp3', name: 'Mi', color: 'red'},
-            {id: 4, path: '/sounds/F4.mp3', name: 'Fá', color: 'pink'},
+            {id: 4, path: '/sounds/F4.mp3', name: 'Fá', color: 'gray'},
             {id: 5, path: '/sounds/G4.mp3', name: 'Sol', color: 'brown'},
             {id: 6, path: '/sounds/A4.mp3', name: 'Lá', color: 'yellow'},
             {id: 7, path: '/sounds/B4.mp3', name: 'Si', color: 'purple'},

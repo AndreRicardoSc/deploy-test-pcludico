@@ -22,6 +22,7 @@ export const useSequenceStore = defineStore('sequence', {
   state: () => ({
     sequence: [],
     correctResponses: [],
+    responses: [],
     finalChoices: [],
     selectedIndex: null
   }),
@@ -50,7 +51,7 @@ export const useSequenceStore = defineStore('sequence', {
         const chosen = sequence[index]
         correctResponses[index] = chosen.object.id
 
-        sequence[index].object.icon = 'mdi mdi-help-box'
+        sequence[index].object.icon = 'mdi mdi-help'
         sequence[index].object.name = 'discover'
 
         if(sequence[index].object.path) {
@@ -71,6 +72,7 @@ export const useSequenceStore = defineStore('sequence', {
       this.correctResponses = correctResponses
       this.finalChoices = finalChoices
       this.selectedIndex = null
+      this.responses = []
     },
 
     selectDiscover(index) {
@@ -85,6 +87,7 @@ export const useSequenceStore = defineStore('sequence', {
       if (item && item.object.name === 'discover') {
         item.object = { ...chosenObject }
       }
-    }
+    },
+
   }
 })
